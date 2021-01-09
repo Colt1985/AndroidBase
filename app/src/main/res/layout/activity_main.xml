@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_abstract_background"
+    tools:context=".MainActivity">
+
+
+    <DigitalClock
+        android:id="@+id/digitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt_button_1"
+        style="@style/NumberButton"
+        android:layout_marginStart="30dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_editText" />
+
+    <Button
+        android:id="@+id/bt_button_2"
+        style="@style/NumberButton"
+        android:text="2"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="@+id/bt_button_1"
+        app:layout_constraintStart_toEndOf="@+id/bt_button_1" />
+
+    <Button
+        android:id="@+id/bt_button_3"
+        style="@style/NumberButton"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_button_2"
+        app:layout_constraintStart_toEndOf="@+id/bt_button_2" />
+
+    <Button
+        android:id="@+id/bt_button_4"
+        style="@style/NumberButton"
+        android:text="4"
+        app:layout_constraintEnd_toEndOf="@+id/bt_button_1"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_1" />
+
+    <Button
+        android:id="@+id/bt_button_5"
+        style="@style/NumberButton"
+        android:text="5"
+        app:layout_constraintEnd_toEndOf="@+id/bt_button_2"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_2" />
+
+    <Button
+        android:id="@+id/bt_button_6"
+        style="@style/NumberButton"
+        android:text="6"
+        app:layout_constraintEnd_toEndOf="@+id/bt_button_3"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_3" />
+
+    <Button
+        android:id="@+id/bt_button_7"
+        style="@style/NumberButton"
+        android:text="7"
+        app:layout_constraintEnd_toEndOf="@+id/bt_button_1"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_4" />
+
+    <Button
+        android:id="@+id/bt_button_8"
+        style="@style/NumberButton"
+        android:text="8"
+        app:layout_constraintEnd_toEndOf="@+id/bt_button_2"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_5" />
+
+    <Button
+        android:id="@+id/bt_button_9"
+        style="@style/NumberButton"
+        android:text="9"
+        app:layout_constraintEnd_toEndOf="@+id/bt_button_3"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_6" />
+
+    <Button
+        android:id="@+id/bt_button_0"
+        style="@style/NumberButton"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/bt_button_8"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_8" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        style="@style/TextView"
+        android:layout_marginTop="150dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_editText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_editText"
+        style="@style/TextView"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_button_2" />
+
+    <Button
+        android:id="@+id/bt_equals"
+        style="@style/ButtonEquals"
+        android:text="@string/equals"
+        app:layout_constraintStart_toEndOf="@+id/bt_break_close"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_dot" />
+
+    <Button
+        android:id="@+id/bt_button_dot"
+        style="@style/ActionButton"
+        android:text="@string/dot"
+        app:layout_constraintStart_toEndOf="@+id/bt_button_split"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_multiply" />
+
+    <Button
+        android:id="@+id/bt_button_sum"
+        style="@style/ActionButton"
+        android:text="@string/sum"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_button_3"
+        app:layout_constraintStart_toEndOf="@+id/bt_button_3" />
+
+    <Button
+        android:id="@+id/bt_button_minus"
+        style="@style/ActionButton"
+        android:text="@string/minus"
+        app:layout_constraintStart_toEndOf="@+id/bt_button_6"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_sum" />
+
+    <Button
+        android:id="@+id/bt_button_multiply"
+        style="@style/ActionButton"
+        android:text="@string/multiply"
+        app:layout_constraintStart_toEndOf="@+id/bt_button_9"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_minus" />
+
+    <Button
+        android:id="@+id/bt_button_split"
+        style="@style/ActionButton"
+        android:text="@string/split"
+        app:layout_constraintStart_toEndOf="@+id/bt_button_0"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_9" />
+
+    <Button
+        android:id="@+id/bt_back"
+        style="@style/ActionButton"
+        android:text="@string/back"
+        app:layout_constraintEnd_toStartOf="@+id/bt_button_0"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_7" />
+
+    <Button
+        android:id="@+id/bt_clear"
+        style="@style/ActionButton"
+        android:text="@string/ac"
+        app:layout_constraintEnd_toStartOf="@+id/bt_button_0"
+        app:layout_constraintTop_toBottomOf="@+id/bt_back" />
+
+    <Button
+        android:id="@+id/bt_break_open"
+        style="@style/ActionButton"
+        android:text="@string/break_open"
+        app:layout_constraintEnd_toEndOf="@+id/bt_button_0"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_0" />
+
+    <Button
+        android:id="@+id/bt_break_close"
+        style="@style/ActionButton"
+        android:text="@string/break_close"
+        app:layout_constraintStart_toEndOf="@+id/bt_break_open"
+        app:layout_constraintTop_toBottomOf="@+id/bt_button_split" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

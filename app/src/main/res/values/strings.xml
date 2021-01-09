@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HomeWork_2</string>.
+
+    <string name="equally">equally</string>
+    <string name="minus">-</string>
+    <string name="multiply">*</string>
+    <string name="sum">+</string>
+    <string name="split">/</string>
+    <string name="result">Result</string>
+    <string name="equals">=</string>
+    <string name="back">Back</string>
+    <string name="ac">AC</string>
+    <string name="break_open">(</string>
+    <string name="break_close">)</string>
+    <string name="dot">.</string>
+</resources>
