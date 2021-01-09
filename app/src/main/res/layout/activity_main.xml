@@ -98,7 +98,8 @@
         android:gravity="end"
         android:textSize="100sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_editText"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_editText"
@@ -106,7 +107,8 @@
         android:ellipsize="end"
         android:gravity="end"
         android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_button_2" />
+        app:layout_constraintBottom_toTopOf="@+id/bt_button_2"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/bt_equals"
