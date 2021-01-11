@@ -5,7 +5,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
-
+//Calculator Kotlin
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         bt_button_split.setOnClickListener { setTextField("/") }
         bt_break_open.setOnClickListener { setTextField("(") }
         bt_break_close.setOnClickListener { setTextField(")") }
+        bt_button_dot.setOnClickListener { setTextField(".") }
 
         bt_clear.setOnClickListener {
             tv_editText.text = ""
