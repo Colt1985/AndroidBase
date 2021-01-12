@@ -64,4 +64,20 @@ class MainActivity : AppCompatActivity() {
         }
         tv_editText.append(str)
     }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.run {
+            putString("KEY", tv_editText.text.toString())
+            putString("KEY", tv_result.text.toString())
+        }
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+
+        tv_editText.text = savedInstanceState.getString("KEY")
+        tv_result.text = savedInstanceState.getString("KEY")
+    }
+
 }
