@@ -12,16 +12,14 @@
         android:id="@+id/digitalClock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:textColor="@color/black"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/bt_button_1"
         style="@style/NumberButton"
-
-
         android:text="1"
         app:layout_constraintBottom_toTopOf="@+id/bt_button_4"
         app:layout_constraintEnd_toStartOf="@+id/bt_button_2" />
@@ -31,7 +29,6 @@
         style="@style/NumberButton"
         android:text="2"
         android:textColor="@color/black"
-
         app:layout_constraintBottom_toTopOf="@+id/bt_button_5"
         app:layout_constraintEnd_toStartOf="@+id/bt_button_3" />
 
@@ -96,7 +93,7 @@
         style="@style/TextView"
         android:ellipsize="start"
         android:gravity="end"
-        android:textSize="100sp"
+        android:textSize="@dimen/ts_result"
         app:layout_constraintBottom_toTopOf="@+id/tv_editText"
         tools:ignore="MissingConstraints" />
 
@@ -105,7 +102,7 @@
         style="@style/TextView"
         android:ellipsize="end"
         android:gravity="end"
-        android:textSize="50sp"
+        android:textSize="@dimen/ts_edit"
         app:layout_constraintBottom_toTopOf="@+id/bt_button_2" />
 
     <Button
