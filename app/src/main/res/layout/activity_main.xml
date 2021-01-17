@@ -2,18 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blue_abstract_background"
     tools:context=".MainActivity">
-
 
     <DigitalClock
         android:id="@+id/digitalClock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:padding="10dp"
+        style="@style/DigClock"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -28,7 +24,6 @@
         android:id="@+id/bt_button_2"
         style="@style/NumberButton"
         android:text="2"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/bt_button_5"
         app:layout_constraintEnd_toStartOf="@+id/bt_button_3" />
 
@@ -108,7 +103,6 @@
     <Button
         android:id="@+id/bt_equals"
         style="@style/ButtonEquals"
-        android:layout_marginEnd="30dp"
         android:text="@string/equals"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -175,5 +169,4 @@
         android:text="@string/break_close"
         app:layout_constraintBottom_toBottomOf="@+id/bt_equals"
         app:layout_constraintEnd_toStartOf="@+id/bt_equals" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
