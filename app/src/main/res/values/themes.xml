@@ -19,6 +19,7 @@
 
     <style name="background">
         <item name="android:background">@drawable/blue_abstract_background</item>
+        <item name="android:padding">10dp</item>
     </style>
 
     <style name="NumberButton">

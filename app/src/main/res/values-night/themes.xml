@@ -27,6 +27,7 @@
 
     <style name="background">
         <item name="android:background">@drawable/background_night</item>
+        <item name="android:padding">10dp</item>
     </style>
 
     <style name="ActionButton">
