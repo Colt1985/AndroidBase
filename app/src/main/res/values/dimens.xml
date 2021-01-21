@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ts_result_land">60sp</dimen>
+    <dimen name="ts_edit_land">50sp</dimen>
+    <dimen name="ts_edit">50sp</dimen>
+    <dimen name="ts_result">100sp</dimen>
+</resources>

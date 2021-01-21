@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/background"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/blue_abstract_background">
-
+    android:layout_height="match_parent">
 
     <DigitalClock
         android:id="@+id/digitalClock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:textColor="@color/black"
+        style="@style/DigClock"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
@@ -26,8 +22,6 @@
         android:id="@+id/bt_button_2"
         style="@style/NumberButton"
         android:text="2"
-        android:textColor="@color/black"
-
         app:layout_constraintBottom_toBottomOf="@+id/bt_button_1"
         app:layout_constraintStart_toEndOf="@+id/bt_button_1" />
 
@@ -92,7 +86,7 @@
         style="@style/TextView"
         android:ellipsize="start"
         android:gravity="end"
-        android:textSize="70sp"
+        android:textSize="@dimen/ts_result_land"
         app:layout_constraintBottom_toTopOf="@+id/tv_editText"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -101,7 +95,7 @@
         style="@style/TextView"
         android:ellipsize="end"
         android:gravity="end"
-        android:textSize="50sp"
+        android:textSize="@dimen/ts_edit_land"
         app:layout_constraintBottom_toTopOf="@+id/bt_button_2" />
 
     <Button
@@ -174,4 +168,10 @@
         app:layout_constraintStart_toEndOf="@+id/bt_break_open"
         app:layout_constraintTop_toBottomOf="@+id/bt_button_split" />
 
+    <Button
+        android:id="@+id/bt_setting"
+        style="@style/SettingButton"
+        android:text="@string/setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Калькулятор</string>
     <string name="equally">равно</string>
     <string name="minus">-</string>
     <string name="multiply">*</string>
@@ -12,4 +13,8 @@
     <string name="break_open">(</string>
     <string name="break_close">)</string>
     <string name="dot">.</string>
+    <string name="Error">Ошибка</string>
+    <string name="setting">Настройки</string>
+    <string name="dark">Тёмная</string>
+    <string name="bright">Светлая</string>
 </resources>
