@@ -168,4 +168,11 @@
         android:text="@string/break_close"
         app:layout_constraintStart_toEndOf="@+id/bt_break_open"
         app:layout_constraintTop_toBottomOf="@+id/bt_button_split" />
+
+    <Button
+        android:id="@+id/bt_setting"
+        style="@style/SettingButton"
+        android:text="@string/setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

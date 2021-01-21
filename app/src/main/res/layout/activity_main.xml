@@ -98,7 +98,9 @@
         android:ellipsize="end"
         android:gravity="end"
         android:textSize="@dimen/ts_edit"
-        app:layout_constraintBottom_toTopOf="@+id/bt_button_2" />
+        app:layout_constraintBottom_toTopOf="@+id/bt_button_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/bt_equals"
@@ -169,4 +171,11 @@
         android:text="@string/break_close"
         app:layout_constraintBottom_toBottomOf="@+id/bt_equals"
         app:layout_constraintEnd_toStartOf="@+id/bt_equals" />
+
+    <Button
+        android:id="@+id/bt_setting"
+        style="@style/SettingButton"
+        android:text="@string/setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

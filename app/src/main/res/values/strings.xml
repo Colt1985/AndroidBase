@@ -13,4 +13,7 @@
     <string name="break_close">)</string>
     <string name="dot">.</string>
     <string name="Error">Error</string>
+    <string name="setting">setting</string>
+    <string name="dark">Dark</string>
+    <string name="bright">bright</string>
 </resources>

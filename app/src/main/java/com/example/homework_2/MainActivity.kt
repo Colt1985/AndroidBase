@@ -1,5 +1,6 @@
 package com.example.homework_2
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,7 @@ open class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         calcView()
+        settingsOpen()
     }
 
     fun calcView() {
@@ -66,6 +68,13 @@ open class MainActivity : AppCompatActivity() {
             tv_result.text = ""
         }
         tv_editText.append(str)
+    }
+
+    fun settingsOpen() {
+        bt_setting.setOnClickListener {
+            val runSettings = Intent(this, Settings::class.java)
+            startActivity(runSettings)
+        }
     }
 
     override fun onSaveInstanceState(savedInstanceState: Bundle) {

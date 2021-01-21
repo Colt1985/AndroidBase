@@ -28,6 +28,21 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="SettingButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/material_on_background_disabled</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SwitchButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/material_on_background_disabled</item>
+        <item name="android:text">@string/dark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
     <style name="ActionButton">
         <item name="android:textColor">@color/black</item>
         <item name="android:background">#CC0000</item>
